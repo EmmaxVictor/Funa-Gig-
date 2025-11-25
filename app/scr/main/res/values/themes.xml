@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.JobPortalApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/fg_primary_accent_dark</item>
+        <item name="colorPrimaryVariant">@color/fg_card_soft</item>
+        <item name="colorOnPrimary">@color/fiverr_white</item>
+        <item name="colorSecondary">@color/fg_secondary_accent</item>
+        <item name="colorSecondaryVariant">@color/fg_chip_bg_selected</item>
+        <item name="colorOnSecondary">@color/fiverr_white</item>
+        <item name="android:windowBackground">@color/fg_deep_forest</item>
+        <item name="android:navigationBarColor">@color/fg_deep_forest</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/fg_card_soft</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

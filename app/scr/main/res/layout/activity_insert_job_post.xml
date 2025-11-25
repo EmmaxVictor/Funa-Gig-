@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fg_deep_forest"
+    android:padding="20dp"
+    tools:context=".InsertJobPostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post a New Gig"
+            android:textColor="@color/fiverr_white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Give us a few details and we’ll share your gig with the community."
+            android:textColor="@color/fg_muted_text"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_primary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is the Gig?"
+                android:textColor="@color/fiverr_white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txt_job_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_search_field"
+                android:hint="e.g., Help Moving Boxes"
+                android:textColor="@color/fiverr_white"
+                android:textColorHint="@color/fg_muted_text"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/txt_job_description"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="12dp"
+                android:gravity="top"
+                android:background="@drawable/bg_search_field"
+                android:hint="Provide details about the task, what needs to be done, and any special requirements."
+                android:textColor="@color/fiverr_white"
+                android:textColorHint="@color/fg_muted_text"
+                android:padding="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_primary"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is Needed?"
+                android:textColor="@color/fiverr_white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:chipSpacing="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp">
+
+                <EditText
+                    android:id="@+id/input_skill"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_search_field"
+                    android:hint="Add a skill..."
+                    android:textColor="@color/fiverr_white"
+                    android:textColorHint="@color/fg_muted_text"
+                    android:padding="12dp" />
+
+                <Button
+                    android:id="@+id/btn_add_skill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/bg_primary_button"
+                    android:text="+"
+                    android:textColor="@color/fiverr_black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_primary"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Where and When?"
+                android:textColor="@color/fiverr_white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txt_job_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_search_field"
+                android:hint="Enter address or area"
+                android:textColor="@color/fiverr_white"
+                android:textColorHint="@color/fg_muted_text"
+                android:padding="14dp" />
+
+            <Spinner
+                android:id="@+id/spinner_job_urgency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_search_field"
+                android:entries="@array/urgency_options"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/tv_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_search_field"
+                android:padding="16dp"
+                android:text="Select a date and time"
+                android:textColor="@color/fg_muted_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_primary"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Details"
+                android:textColor="@color/fiverr_white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggle_payment_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_payment_fixed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fixed Price" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_payment_hourly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hourly Rate" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <EditText
+                android:id="@+id/txt_job_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_search_field"
+                android:hint="Payment amount (e.g., UGX 50,000)"
+                android:textColor="@color/fiverr_white"
+                android:textColorHint="@color/fg_muted_text"
+                android:padding="14dp"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_primary"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Information"
+                android:textColor="@color/fiverr_white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggle_contact_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_contact_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In-App Chat" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_contact_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <EditText
+                android:id="@+id/input_contact_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_search_field"
+                android:hint="Phone Number"
+                android:textColor="@color/fiverr_white"
+                android:textColorHint="@color/fg_muted_text"
+                android:padding="14dp"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_job_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_primary_button"
+            android:text="@string/post_job"
+            android:textAllCaps="false"
+            android:textColor="@color/fiverr_black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fg_deep_forest"
+    tools:context=".activities.AvailableGigsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_secondary_button"
+                android:contentDescription="@string/app_name"
+                android:src="@android:drawable/ic_media_previous"
+                android:tint="@color/fiverr_white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Available Gigs"
+                android:textColor="@color/fiverr_white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <ImageButton
+                android:id="@+id/btn_notifications"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_secondary_button"
+                android:contentDescription="Notifications"
+                android:src="@android:drawable/ic_dialog_info"
+                android:tint="@color/fiverr_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_search_field"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_search"
+                android:tint="@color/fg_muted_text" />
+
+            <EditText
+                android:id="@+id/input_search_gigs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Search for a gig (e.g., 'gardening')"
+                android:textColor="@color/fiverr_white"
+                android:textColorHint="@color/fg_muted_text"
+                android:paddingStart="12dp"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/btn_clear_search"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Clear search"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:tint="@color/fg_muted_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_filter_category"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_filter"
+                android:text="Category"
+                android:textAllCaps="false"
+                android:textColor="@color/fg_chip_text" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_filter_location"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_filter"
+                android:text="Location"
+                android:textAllCaps="false"
+                android:textColor="@color/fg_chip_text" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_filter_skill"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_filter"
+                android:text="Skill Level"
+                android:textAllCaps="false"
+                android:textColor="@color/fg_chip_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_sort_by_size"
+                android:tint="@color/fg_muted_text" />
+
+            <TextView
+                android:id="@+id/tv_sort_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sort by: Newest"
+                android:textColor="@color/fg_muted_text"
+                android:textSize="14sp"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btn_sort_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_secondary_button"
+                android:text="Change"
+                android:textAllCaps="false"
+                android:textColor="@color/fiverr_white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_manual_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_secondary_button"
+                android:text="@string/refresh_available_gigs"
+                android:textAllCaps="false"
+                android:textColor="@color/fiverr_white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_gigs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingBottom="100dp"
+                    tools:listitem="@layout/item_gig" />
+
+                <TextView
+                    android:id="@+id/tv_no_gigs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/available_gigs_empty"
+                    android:textColor="@color/fg_muted_text"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_dialog_map"
+        android:contentDescription="Map"
+        app:layout_anchorGravity="bottom|end"
+        app:backgroundTint="@color/fg_card_soft" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_post_gig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:icon="@android:drawable/ic_input_add"
+        android:text="Post a Gig"
+        android:textAllCaps="false"
+        android:textColor="@color/fiverr_black"
+        app:backgroundTint="@color/fg_primary_accent"
+        app:layout_anchorGravity="bottom|end" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

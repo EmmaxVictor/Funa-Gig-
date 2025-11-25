@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fg_deep_forest"
+    android:padding="20dp"
+    tools:context=".activities.ServiceDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_gig_cover"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_hero_placeholder"
+            android:contentDescription="@string/available_gigs_title"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_primary"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_service_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help with Garden Weeding"
+                android:textColor="@color/fiverr_white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tv_service_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gardening"
+                android:textColor="@color/fg_muted_text"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/tv_service_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UGX 120,000"
+                    android:textColor="@color/fg_primary_accent"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_service_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" • Approx. 4 hours"
+                    android:textColor="@color/fg_muted_text"
+                    android:textSize="13sp"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_gig_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/fg_primary_accent"
+            app:tabSelectedTextColor="@color/fiverr_white"
+            app:tabTextColor="@color/fg_muted_text">
+
+            <com.google.android.material.tabs.TabItem
+                android:text="Details" />
+            <com.google.android.material.tabs.TabItem
+                android:text="Requirements" />
+            <com.google.android.material.tabs.TabItem
+                android:text="Location" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <TextView
+            android:id="@+id/tv_tab_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fg_chip_text"
+            android:textSize="15sp"
+            android:lineSpacingExtra="6dp"
+            android:padding="16dp"
+            android:background="@drawable/bg_card_secondary"
+            android:layout_marginBottom="20dp"
+            tools:text="Looking for a helping hand to get my vegetable garden back in shape…" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_primary"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Posted By"
+                android:textColor="@color/fg_chip_text"
+                android:textSize="12sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tv_posted_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jane Doe • 4.8 rating"
+                android:textColor="@color/fiverr_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_apply_for_gig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_primary_button"
+            android:text="Apply Now"
+            android:textAllCaps="false"
+            android:textColor="@color/fiverr_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btn_view_applicants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_secondary_button"
+            android:text="View Applicants"
+            android:textAllCaps="false"
+            android:textColor="@color/fiverr_white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btn_share_gig"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_secondary_button"
+                android:text="Share"
+                android:textAllCaps="false"
+                android:textColor="@color/fiverr_white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp" />
+
+            <Button
+                android:id="@+id/btn_contact_seller"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_secondary_button"
+                android:text="Contact Seller"
+                android:textAllCaps="false"
+                android:textColor="@color/fiverr_white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

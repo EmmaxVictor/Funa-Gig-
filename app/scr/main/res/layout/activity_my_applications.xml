@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fiverr_white"
+    android:padding="16dp"
+    tools:context=".activities.MyApplicationsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Applications"
+            android:textColor="@color/fiverr_black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_refresh_applications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_design"
+            android:text="Refresh"
+            android:textColor="@color/fiverr_white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="14dp" />
+
+        <!-- Application Summary -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/fiverr_light_gray"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_application_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You have 3 pending, 8 accepted, and 2 rejected applications"
+                android:textColor="@color/fiverr_black"
+                android:textSize="16sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_my_applications"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbars="vertical"
+            android:paddingBottom="12dp" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_view_pending_applications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/category_button_design"
+                android:text="View Pending Applications"
+                android:textColor="@color/fiverr_black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btn_view_accepted_applications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/category_button_design"
+                android:text="View Accepted Applications"
+                android:textColor="@color/fiverr_black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btn_view_rejected_applications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/category_button_design"
+                android:text="View Rejected Applications"
+                android:textColor="@color/fiverr_black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btn_back_to_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/category_button_design"
+                android:text="Back to Profile"
+                android:textColor="@color/fiverr_black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

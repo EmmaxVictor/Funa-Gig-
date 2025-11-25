@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/fg_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_gig_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Help with Moving Boxes"
+                android:textColor="@color/fiverr_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_gig_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_chip_filter"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="Starts Tomorrow"
+                android:textAllCaps="false"
+                android:textColor="@color/fg_chip_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_gig_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By John D."
+            android:textColor="@color/fg_muted_text"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/tv_gig_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Need two people to help move furniture and boxes for 3 hours."
+            android:textColor="@color/fg_chip_text"
+            android:textSize="14sp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_gig_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📍 Downtown, 1.5 miles"
+                android:textColor="@color/fg_muted_text"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_gig_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UGX 50,000"
+                android:textColor="@color/fg_primary_accent"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tv_gig_urgency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Urgent"
+                android:textColor="@color/fg_warning_orange"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_gig_applicants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 applicants"
+                android:textColor="@color/fg_muted_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_gig_posted_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Posted 2 hours ago"
+                android:textColor="@color/fg_muted_text"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btn_view_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_primary_button"
+                android:text="View Details"
+                android:textAllCaps="false"
+                android:textColor="@color/fiverr_black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

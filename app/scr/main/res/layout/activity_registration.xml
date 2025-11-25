@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_color"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/registration_heading"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Only Google account sign up is allowed."
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <EditText
+                android:id="@+id/register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_design"
+                android:hint="Name (optional)"
+                android:textColorHint="@color/fiverr_gray"
+                android:textColor="@color/fiverr_black"
+                android:padding="16dp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_design"
+                android:hint="Email"
+                android:textColorHint="@color/fiverr_gray"
+                android:textColor="@color/fiverr_black"
+                android:padding="16dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edit_design"
+                android:hint="Password"
+                android:textColorHint="@color/fiverr_gray"
+                android:textColor="@color/fiverr_black"
+                android:padding="16dp"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btn_email_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/button_design"
+                android:text="Sign Up with Email"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="15dp" />
+
+            <Button
+                android:id="@+id/btn_google_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/continue_with_google"
+                android:background="@drawable/button_design"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/login_button_text"
+                android:background="@drawable/button_design"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

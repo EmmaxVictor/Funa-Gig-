@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">FunaGig</string>
+    
+    <!-- Home Screen -->
+    <string name="welcome_message">Hey there! Funa Gig, Turn your skills into success.</string>
+    <string name="browse_services">Get a Gig</string>
+    <string name="post_gig">Post a Gig</string>
+    <string name="become_seller">Become a Seller</string>
+    <string name="available_gigs_title">Available Gigs</string>
+    <string name="available_gigs_subtitle">Browse tasks that match your skills and filter them the way you like.</string>
+    <string name="view_available_gigs">View Available Gigs</string>
+    <string name="sort_by_label">Sort by</string>
+    <string name="sort_option_recent">Most Recent</string>
+    <string name="sort_option_location">Location (A-Z)</string>
+    <string name="sort_option_title">Gig Title (A-Z)</string>
+    <string name="sort_option_budget">Budget (High-Low)</string>
+    <string name="available_gigs_empty">No gigs match your filters right now.\nCheck back soon or post a gig!</string>
+    <string name="refresh_available_gigs">Refresh gigs</string>
+    <string name="search_gigs_hint">Search for a gig (e.g., \'gardening\')</string>
+    <string name="filter_category">Category</string>
+    <string name="filter_location">Location</string>
+    <string name="filter_skill">Skill Level</string>
+    <string name="sort_label">Sort by:</string>
+    <string name="notifications">Notifications</string>
+    <string name="view_map">View on map</string>
+    <string name="edit_profile_label">Edit profile</string>
+    <!-- Sort/filter arrays moved to arrays.xml -->
+    
+    <!-- Service Categories -->
+    <string name="graphics_design">Graphics &amp; Design</string>
+    <string name="digital_marketing">Digital Marketing</string>
+    <string name="writing_translation">Writing &amp; Translation</string>
+    <string name="video_animation">Video &amp; Animation</string>
+    <string name="music_audio">Music &amp; Audio</string>
+    <string name="programming_tech">Programming &amp; Tech</string>
+    <string name="business">Business</string>
+    <string name="lifestyle">Lifestyle</string>
+    
+    <!-- Authentication -->
+    <string name="login_heading">Welcome Back</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_text">Log In</string>
+    <string name="register_button_text">Join FunaGig</string>
+    <string name="or_text">or</string>
+    <string name="registration_heading">Join FunaGig</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="google_sign_in_failed">Google Sign-In failed. Please try again.</string>
+    <string name="google_sign_in_success">Signed in successfully with Google!</string>
+    <string name="default_web_client_id">947879979885-t1kei2b6ani2dsqjoambuu5s9lcmu7fo.apps.googleusercontent.com</string>
+    
+    <!-- Job Related -->
+    <string name="see_all_jobs_button">Browse Uganda Jobs</string>
+    <string name="post_new_job_button">Post new a Gig</string>
+    <string name="job_title">Service Title:</string>
+    <string name="job_description">Service Description:</string>
+    <string name="job_skill">Skills Required:</string>
+    <string name="job_salary">Starting Price (UGX):</string>
+    <string name="job_location">Location:</string>
+    <string name="job_urgency">How urgent is the task?</string>
+    <string name="job_urgency_hint">Select urgency</string>
+    <string name="urgency_same_day">Need someone today</string>
+    <string name="urgency_this_week">Within this week</string>
+    <string name="urgency_flexible">Flexible timeline</string>
+    <string name="post_job">Post Gig</string>
+    <string-array name="urgency_options">
+        <item>@string/urgency_same_day</item>
+        <item>@string/urgency_this_week</item>
+        <item>@string/urgency_flexible</item>
+    </string-array>
+    
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="messages">Messages</string>
+    <string name="orders">Orders</string>
+    <string name="profile">Profile</string>
+</resources>

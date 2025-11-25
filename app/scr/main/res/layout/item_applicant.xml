@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/fiverr_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Applicant Name -->
+        <TextView
+            android:id="@+id/tv_applicant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Applicant Name"
+            android:textColor="@color/fiverr_black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Contact Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_applicant_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📧 email@example.com"
+                android:textColor="@color/fiverr_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_applicant_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📞 +256 700 000 000"
+                android:textColor="@color/fiverr_gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Cover Letter -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cover Letter:"
+            android:textColor="@color/fiverr_black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tv_cover_letter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cover letter text goes here..."
+            android:textColor="@color/fiverr_gray"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Proposed Budget and Status Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_proposed_budget"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Proposed: UGX 0"
+                android:textColor="@color/fiverr_green"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Pending"
+                android:textColor="@color/fiverr_gray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!-- Applied Date -->
+        <TextView
+            android:id="@+id/tv_applied_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Applied recently"
+            android:textColor="@color/fiverr_gray"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

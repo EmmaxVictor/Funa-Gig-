@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fiverr_white"
+    tools:context=".activities.ApplicantsActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@color/fiverr_green">
+
+        <TextView
+            android:id="@+id/tv_gig_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gig Applicants"
+            android:textColor="@color/fiverr_white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View and manage applicants for your gig"
+            android:textColor="@color/fiverr_light_gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Applicants List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_applicants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <!-- Empty State -->
+            <TextView
+                android:id="@+id/tv_no_applicants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No applicants yet.\nShare your gig to get more applications!"
+                android:textColor="@color/fiverr_gray"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="32dp"
+                android:visibility="gone" />
+
+            <!-- Mark as Taken Button -->
+            <Button
+                android:id="@+id/btn_mark_as_taken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_design"
+                android:text="Mark Gig as Taken"
+                android:textColor="@color/fiverr_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

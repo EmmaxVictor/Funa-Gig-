@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fg_deep_forest"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_setting_row"
+                android:padding="8dp"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="@string/home" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Profile &amp; Settings"
+                android:textColor="@color/fiverr_white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_dark_card"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp">
+
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_person_circle"
+                    android:scaleType="centerCrop"
+                    android:tint="@color/fiverr_white" />
+
+                <ImageButton
+                    android:id="@+id/btn_edit_profile"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="@drawable/bg_primary_button"
+                    android:padding="8dp"
+                    android:src="@android:drawable/ic_menu_edit"
+                    android:contentDescription="@string/edit_profile_label" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jane Doe"
+                android:textColor="@color/fiverr_white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/tv_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="jane@funagig.com"
+                android:textColor="@color/fg_muted_text"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:id="@+id/tv_user_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.8 ⭐"
+                    android:textColor="@color/fg_primary_accent"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="24dp" />
+                <TextView
+                    android:id="@+id/tv_completed_gigs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23 Completed Gigs"
+                    android:textColor="@color/fg_chip_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Information"
+            android:textColor="@color/fg_chip_text"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/row_personal_details"
+            style="@style/SettingRowStyle">
+            <ImageView
+                style="@style/SettingRowIcon"
+                android:src="@drawable/ic_person_circle" />
+            <LinearLayout
+                style="@style/SettingRowContent">
+                <TextView
+                    style="@style/SettingRowTitle"
+                    android:text="Personal Details" />
+                <TextView
+                    style="@style/SettingRowSubtitle"
+                    android:text="Name, profile photo" />
+            </LinearLayout>
+            <ImageView
+                style="@style/SettingRowArrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_contact_information"
+            style="@style/SettingRowStyle">
+            <ImageView
+                style="@style/SettingRowIcon"
+                android:src="@drawable/ic_phone_outline" />
+            <LinearLayout
+                style="@style/SettingRowContent">
+                <TextView
+                    style="@style/SettingRowTitle"
+                    android:text="Contact Information" />
+                <TextView
+                    style="@style/SettingRowSubtitle"
+                    android:text="Email, phone, location" />
+            </LinearLayout>
+            <ImageView
+                style="@style/SettingRowArrow" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skills &amp; Experience"
+            android:textColor="@color/fg_chip_text"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/row_my_skills"
+            style="@style/SettingRowStyle">
+            <ImageView
+                style="@style/SettingRowIcon"
+                android:src="@android:drawable/ic_menu_manage" />
+            <LinearLayout
+                style="@style/SettingRowContent">
+                <TextView
+                    style="@style/SettingRowTitle"
+                    android:text="My Skills" />
+                <TextView
+                    style="@style/SettingRowSubtitle"
+                    android:text="Update the services you offer" />
+            </LinearLayout>
+            <ImageView
+                style="@style/SettingRowArrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_my_gigs"
+            style="@style/SettingRowStyle">
+            <ImageView
+                style="@style/SettingRowIcon"
+                android:src="@android:drawable/ic_menu_agenda" />
+            <LinearLayout
+                style="@style/SettingRowContent">
+                <TextView
+                    style="@style/SettingRowTitle"
+                    android:text="My Gigs" />
+                <TextView
+                    style="@style/SettingRowSubtitle"
+                    android:text="Manage the gigs you posted" />
+            </LinearLayout>
+            <ImageView
+                style="@style/SettingRowArrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_my_applications"
+            style="@style/SettingRowStyle">
+            <ImageView
+                style="@style/SettingRowIcon"
+                android:src="@android:drawable/ic_menu_view" />
+            <LinearLayout
+                style="@style/SettingRowContent">
+                <TextView
+                    style="@style/SettingRowTitle"
+                    android:text="My Applications" />
+                <TextView
+                    style="@style/SettingRowSubtitle"
+                    android:text="Track applications and status" />
+            </LinearLayout>
+            <ImageView
+                style="@style/SettingRowArrow" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Settings"
+            android:textColor="@color/fg_chip_text"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/row_notifications"
+            style="@style/SettingRowStyle">
+            <ImageView
+                style="@style/SettingRowIcon"
+                android:src="@drawable/ic_bell_outline" />
+            <LinearLayout
+                style="@style/SettingRowContent">
+                <TextView
+                    style="@style/SettingRowTitle"
+                    android:text="Notifications" />
+                <TextView
+                    style="@style/SettingRowSubtitle"
+                    android:text="Manage job alerts and updates" />
+            </LinearLayout>
+            <ImageView
+                style="@style/SettingRowArrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_privacy"
+            style="@style/SettingRowStyle">
+            <ImageView
+                style="@style/SettingRowIcon"
+                android:src="@android:drawable/ic_lock_lock" />
+            <LinearLayout
+                style="@style/SettingRowContent">
+                <TextView
+                    style="@style/SettingRowTitle"
+                    android:text="Privacy Settings" />
+                <TextView
+                    style="@style/SettingRowSubtitle"
+                    android:text="Control what others can see" />
+            </LinearLayout>
+            <ImageView
+                style="@style/SettingRowArrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_setting_row"
+            android:gravity="center_vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dark Mode"
+                    android:textColor="@color/fiverr_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Use the dark experience across the app"
+                    android:textColor="@color/fg_muted_text"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_dark_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/fg_primary_accent"
+                android:trackTint="@color/fg_card_alt" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Support &amp; Legal"
+            android:textColor="@color/fg_chip_text"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:id="@+id/row_help_center"
+            style="@style/SettingRowStyle">
+            <ImageView
+                style="@style/SettingRowIcon"
+                android:src="@android:drawable/ic_menu_help" />
+            <LinearLayout
+                style="@style/SettingRowContent">
+                <TextView
+                    style="@style/SettingRowTitle"
+                    android:text="Help Center" />
+                <TextView
+                    style="@style/SettingRowSubtitle"
+                    android:text="Browse FAQs or reach support" />
+            </LinearLayout>
+            <ImageView
+                style="@style/SettingRowArrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_terms"
+            style="@style/SettingRowStyle">
+            <ImageView
+                style="@style/SettingRowIcon"
+                android:src="@android:drawable/ic_menu_info_details" />
+            <LinearLayout
+                style="@style/SettingRowContent">
+                <TextView
+                    style="@style/SettingRowTitle"
+                    android:text="Terms of Service" />
+                <TextView
+                    style="@style/SettingRowSubtitle"
+                    android:text="Review how FunaGig works" />
+            </LinearLayout>
+            <ImageView
+                style="@style/SettingRowArrow" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/fg_warning_orange"
+            android:text="Log Out"
+            android:textAllCaps="false"
+            android:textColor="@color/fiverr_white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fiverr_white"
+    android:padding="16dp"
+    tools:context=".activities.EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Profile Photo -->
+        <ImageView
+            android:id="@+id/iv_profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:scaleType="centerCrop"
+            android:background="@drawable/category_button_design" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_take_photo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Take Photo"
+                android:background="@drawable/category_button_design"
+                android:textColor="@color/fiverr_white"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btn_choose_photo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Choose from Gallery"
+                android:background="@drawable/category_button_design"
+                android:textColor="@color/fiverr_white"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="@color/fiverr_black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Profile Form -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textColor="@color/fiverr_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/fiverr_gray"
+            android:textColor="@color/fiverr_black"
+            android:background="@drawable/edit_design"
+            android:padding="16dp"
+            android:hint="Enter your full name" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textColor="@color/fiverr_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/fiverr_gray"
+            android:textColor="@color/fiverr_black"
+            android:background="@drawable/edit_design"
+            android:padding="16dp"
+            android:hint="Enter your email address" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bio"
+            android:textColor="@color/fiverr_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_user_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:textColorHint="@color/fiverr_gray"
+            android:textColor="@color/fiverr_black"
+            android:background="@drawable/edit_design"
+            android:padding="16dp"
+            android:hint="Tell us about yourself" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skills"
+            android:textColor="@color/fiverr_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_user_skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:textColorHint="@color/fiverr_gray"
+            android:textColor="@color/fiverr_black"
+            android:background="@drawable/edit_design"
+            android:padding="16dp"
+            android:hint="List your skills (comma separated)" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/category_button_design"
+                android:text="Cancel"
+                android:textColor="@color/fiverr_black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btn_save_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/button_design"
+                android:text="Save Profile"
+                android:textColor="@color/fiverr_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

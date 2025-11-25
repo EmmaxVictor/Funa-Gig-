@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fiverr_white"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Logo/Header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/fiverr_green"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_heading"
+                android:textColor="@color/fiverr_black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Login Form -->
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/fiverr_gray"
+                android:textColor="@color/fiverr_black"
+                android:background="@drawable/edit_design"
+                android:padding="16dp"
+                android:hint="@string/email_hint" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/fiverr_gray"
+                android:textColor="@color/fiverr_black"
+                android:background="@drawable/edit_design"
+                android:padding="16dp"
+                android:hint="@string/password_hint" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_design"
+                android:text="@string/login_button_text"
+                android:textColor="@color/fiverr_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/or_text"
+                android:padding="16dp"
+                android:textColor="@color/fiverr_gray"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_google_signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_design"
+                android:text="@string/sign_in_with_google"
+                android:textColor="@color/fiverr_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_design"
+                android:text="@string/register_button_text"
+                android:textColor="@color/fiverr_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fg_deep_forest"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_setting_row"
+                android:src="@android:drawable/ic_media_previous"
+                android:tint="@color/fiverr_white"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="My Gigs"
+                android:textColor="@color/fiverr_white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <ImageButton
+                android:id="@+id/btn_filter_options"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_setting_row"
+                android:src="@drawable/ic_bell_outline"
+                android:contentDescription="@string/notifications" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_gig_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Applied gigs 0"
+            android:textColor="@color/fg_muted_text"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_gig_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/fg_primary_accent"
+            app:tabTextColor="@color/fg_muted_text"
+            app:tabSelectedTextColor="@color/fiverr_white">
+
+            <com.google.android.material.tabs.TabItem android:text="Applied" />
+            <com.google.android.material.tabs.TabItem android:text="In Progress" />
+            <com.google.android.material.tabs.TabItem android:text="History" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_search_field"
+            android:padding="12dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_search_outline"
+                android:tint="@color/fg_muted_text" />
+
+            <EditText
+                android:id="@+id/input_search_my_gigs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:hint="Search my gigs by title..."
+                android:textColor="@color/fiverr_white"
+                android:textColorHint="@color/fg_muted_text"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/btn_clear_my_gig_search"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:tint="@color/fg_muted_text"
+                android:contentDescription="Clear search" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_my_gigs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:clipToPadding="false" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_new_gig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/fg_primary_accent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:contentDescription="@string/post_gig" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

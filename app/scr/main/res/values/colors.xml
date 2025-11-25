@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fiverr-like Color Scheme -->
+    <color name="fiverr_green">#37503D</color>
+    <color name="fiverr_dark_green">#19A463</color>
+    <color name="fiverr_light_green">#4DD4A0</color>
+    <color name="fiverr_white">#FFFFFF</color>
+    <color name="fiverr_black">#222325</color>
+    <color name="fiverr_gray">#62646A</color>
+    <color name="fiverr_light_gray">#F5F5F5</color>
+    <color name="fiverr_border">#E4E5E7</color>
+    
+    <!-- New dark theme accent palette -->
+    <color name="fg_deep_forest">#051A14</color>
+    <color name="fg_card">#0D2A1E</color>
+    <color name="fg_card_alt">#133628</color>
+    <color name="fg_card_soft">#183E2F</color>
+    <color name="fg_chip_bg">#0F3728</color>
+    <color name="fg_chip_bg_selected">#1D4F38</color>
+    <color name="fg_chip_text">#CFE8DA</color>
+    <color name="fg_primary_accent">#0BF48C</color>
+    <color name="fg_primary_accent_dark">#07C674</color>
+    <color name="fg_secondary_accent">#5AE1FF</color>
+    <color name="fg_warning_orange">#F4A259</color>
+    <color name="fg_muted_text">#9AB2A4</color>
+    <color name="fg_divider">#1C3A2D</color>
+    
+    <!-- Legacy colors (keeping for compatibility) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#4169E1</color>
+    <color name="purple_700">#4169E1</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="toolbar_color">#37503D</color>
+    <color name="fab_color">#FF44115B</color>
+</resources>
